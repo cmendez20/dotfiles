@@ -81,7 +81,7 @@ function yt-mp3() {
     "$@"
 }
 
-compdef yt-mp3=yt-dlp
+# compdef yt-mp3=yt-dlp
 
 export PATH="$PATH:$HOME/go/bin"
 
