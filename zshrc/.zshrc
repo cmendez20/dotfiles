@@ -54,16 +54,8 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-alias lzd='lazydocker'
-. "/Users/cmendez/.deno/env"
 
 alias cd="z"
-
-# Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/cmendez/Library/Application Support/Herd/config/php/84/"
-
-# Herd injected PHP binary.
-export PATH="/Users/cmendez/Library/Application Support/Herd/bin/":$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -72,19 +64,15 @@ export NVM_DIR="$HOME/.nvm"
 # opencode
 export PATH=/Users/cmendez/.opencode/bin:$PATH
 
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
 # Lazy-load starship
 if (( $+commands[starship] )); then
   eval "$(starship init zsh)"
 fi
 
-# eval "$(starship init zsh)"
-
 # # Lazy-load zoxide on first use of `z` command
 command -v zoxide >/dev/null && eval "$(zoxide init zsh)"
-
-# eval "$(zoxide init zsh)"
 
 function yt-mp3() {
     yt-dlp --ignore-config --sponsorblock-remove sponsor \
