@@ -1,0 +1,14 @@
+-o ~/Movies/YouTube-Videos/%(title)s.%(ext)s
+
+--merge-output-format mp4 --remux-video mp4 -S vcodec:h265,h264,lang,quality,res,fps,hdr:12,acodec:aac
+--sponsorblock-mark all
+
+--sponsorblock-remove sponsor
+
+
+# Define a custom flag "--mp3"
+# 1. -x: Extract audio
+# 2. --audio-format mp3: Convert to MP3
+# 3. --audio-quality 0: Best quality (VBR)
+# 4. -o ...: OVERRIDE the download location to your Music folder
+--alias --mp3 '-x --audio-format mp3 --audio-quality 5 -o "~/Movies/YouTube-Videos/podcasts/%(title)s.%(ext)s"'

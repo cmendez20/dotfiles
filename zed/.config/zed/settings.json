@@ -1,0 +1,35 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "base_keymap": "VSCode",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false,
+  },
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  /// Whether to fold directories automatically
+  /// when a directory has only one directory inside.
+  "project_panel": {
+    "auto_fold_dirs": false,
+  },
+  "buffer_font_family": "BlexMono Nerd Font",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 13,
+  },
+  "experimental.theme_overrides": {
+    "editor.indent_guide_active": "#8ec5ff",
+  },
+}
